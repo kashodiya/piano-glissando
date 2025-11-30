@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Piano Glissando Tool</title>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.70.0/dist/phaser.min.js"></script>
+    <style>
+        body { margin: 0; padding: 20px; font-family: Arial, sans-serif; }
+        #controls { margin-bottom: 20px; }
+        input, button { margin: 5px; padding: 8px; }
+    </style>
+</head>
+<body>
+    <div id="controls">
+        <div>
+            <strong>Click piano keys to select (Key 1: <span id="key1Display">None</span>, Key 2: <span id="key2Display">None</span>)</strong>
+        </div>
+        <div>
+            <label>Key 1 Stay Time: <span id="stay1Val">200</span>ms</label>
+            <input id="stay1" type="range" min="0" max="2000" value="200" step="50">
+        </div>
+        <div>
+            <label>Glissando Time: <span id="glissTimeVal">1000</span>ms</label>
+            <input id="glissTime" type="range" min="100" max="3000" value="1000" step="50">
+        </div>
+        <div>
+            <label>Key 2 Stay Time: <span id="stay2Val">200</span>ms</label>
+            <input id="stay2" type="range" min="0" max="2000" value="200" step="50">
+        </div>
+        <div>
+            <button id="playBtn">Play Glissando</button>
+            <button id="resetBtn">Reset Selection</button>
+        </div>
+    </div>
+    <div id="game"></div>
+    <script src="game.js"></script>
+</body>
+</html>
