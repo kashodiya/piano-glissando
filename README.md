@@ -2,6 +2,8 @@
 
 An interactive web-based piano glissando tool built with Phaser.js and Web Audio API.
 
+![Piano Glissando Tool](screenshot.png)
+
 ## Features
 
 - Visual piano keyboard (2 octaves, 24 keys)
